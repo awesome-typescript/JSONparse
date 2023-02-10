@@ -38,14 +38,12 @@ describe('json-parse', () => {
   })
 
   test('json-parse - 7', async () => {
-    // eslint-disable-next-line unicorn/no-null
     const value = JSONParse(null)
 
     expect(value).toBeNull()
   })
 
   test('json-parse - 8', async () => {
-    // eslint-disable-next-line unicorn/no-useless-undefined
     const value = JSONParse(undefined)
 
     expect(value).toBeUndefined()
